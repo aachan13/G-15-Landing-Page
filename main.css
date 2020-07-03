@@ -3,21 +3,38 @@ body {
     padding: 0 40px 40px 40px;
 }
 
+li {
+    list-style: none;
+    float: left;
+}
 .container {
     padding: 0 15px;
     margin: 0 auto;
 }
 
 header {
-    background-color: #d63031;
+    background-color: #7f78d2;
     height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
 }
 
-.halaman-utama {
+.header-logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px 20px 40px;
+}
+
+.header-list {
+    float: right;
+    
+}
+
+.header-list li {
+    padding: 16px 20px 33px 20px;
+    
+}
+
+.halaman-utama{
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -51,6 +68,15 @@ header {
     font-weight: bold;
     color: #7f78d2;
     margin: 0px 0px 20px 0px;
+    animation-name: example;
+    animation-duration: 12s;
+}
+
+@keyframes example {
+    0%   {color: #a29bfe;}
+    25%  {color: #32ce54;}
+    50%  {color: rgb(255, 0, 43);}
+    100% {color: rgb(5, 5, 5);}
 }
 
 .halaman-utama small {
@@ -249,10 +275,29 @@ footer {
         margin-bottom: 50px;
     }
 
+    header {
+        background-color: #7f78d2;
+        height: 400px;
+        color: white;
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 25px;
+        height: 400px;
+        background-color: #2d3436;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 }
 
-@media only screen and (min-width: 768px) {
+
+@media only screen and (max-width: 768px) {
 
     .konten.teks {
         flex: 1;
@@ -266,5 +311,7 @@ footer {
     .main-img {
         height: 350px;
     }
+
+    
     
 }

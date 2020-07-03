@@ -6,7 +6,7 @@ body {
     width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
-  }
+}
 
 header {
     background-color: #d63031;
@@ -18,12 +18,57 @@ header {
 }
 
 .halaman-utama{
-    height: 400px;
-    background-color: #00b894;
+    height: 100%;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 30px 0px 25px 0px;
 }
+
+.intro-body{
+    font-size: 18px;
+    font-weight: bold;
+    color: #979797;
+    margin: 0px 0px 0px 0px;
+}
+
+.main-img {
+    height: 400px;
+    margin-left: 60px;
+}
+
+.title-body{
+    font-size: 60px;
+    font-weight: bold;
+    color: #7f78d2;
+    margin: 0px 0px 20px 0px;
+}
+
+.halaman-utama small{
+    font-size: 16px;
+    color: #979797;
+}
+
+.body-margin{
+    margin: 0px 0px 30px 0px;
+}
+
+.p-body{
+    font-size: 18px;
+    font-weight: bold;
+    color: #979797;
+    margin: 20px 0px 0px 0px;
+}
+
+.button-body {
+    transition-duration: 0.4s;
+  }
+  
+  .button-body:hover {
+    background-color: #a29bfe; /* Green */
+    color: white;
+  }
 
 .halaman-tambahan{
     height: 250px;
